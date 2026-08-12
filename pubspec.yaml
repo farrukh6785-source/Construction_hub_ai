@@ -1,0 +1,53 @@
+name: construction_hub_ai
+description: "ConstructionHub AI — Enterprise Construction Management Platform (mock-data build, Android + Web)"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Routing
+  go_router: ^14.2.0
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  fl_chart: ^0.68.0
+  cupertino_icons: ^1.0.6
+
+  # Utilities
+  intl: ^0.19.0
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.3
+  connectivity_plus: ^6.0.3
+
+  # -----------------------------------------------------------------
+  # Deliberately NOT included in this build — this app runs entirely
+  # on in-memory mock data (see lib/mock/). No backend, no API keys,
+  # no platform config required beyond `flutter create .`.
+  # Add these back only when connecting a real backend:
+  # -----------------------------------------------------------------
+  # firebase_core / firebase_auth / cloud_firestore / firebase_storage
+  # firebase_messaging / firebase_analytics / firebase_crashlytics
+  # google_sign_in
+  # google_maps_flutter / geolocator / geocoding   (Maps module uses a
+  #   mock location-list UI instead, to avoid requiring a Maps API key)
+  # image_picker / camera / mobile_scanner          (Gallery/Attendance
+  #   use mock/placeholder imagery and a mock QR check-in button)
+  # dio, hive/hive_flutter, pdf, excel, share_plus  (wire in alongside
+  #   a real backend/export pipeline)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
