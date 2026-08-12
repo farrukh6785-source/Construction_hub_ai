@@ -1,4 +1,4 @@
-# ConstructionHub AI — Full App (Mock Data, Android + Web)
+# ConstructionHub AI — Full App (Android + Web)
 
 A complete, navigable build of every module from the original spec,
 running entirely on **in-memory mock data** — no Firebase, no backend,
